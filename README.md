@@ -9,10 +9,9 @@
 - [Starting the Project](#starting-the-project)
 - [Using axios](#using-axios)
 - [Deploying on Netlify](#deploying-on-netlify)
+___
 ![Screen Shot 2022-07-23 at 2 35 23 PM](https://user-images.githubusercontent.com/67666661/180620370-1704c61a-db67-455c-bdea-6afb62f29e23.png)
 
-
-___
 ## Getting Started
 ### Use Template
 #### 1. To get started, click the GREEN "Use this Template" button at the top of the repo
