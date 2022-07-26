@@ -19,7 +19,7 @@ const getPlayers = (uid) => new Promise((resolve, reject) => {
 
 // Get single player
 const getSinglePlayer = (firebaseKey) => new Promise((resolve, reject) => {
-  axios.get(`${dbUrl}players/${firebaseKey}.json`)
+  axios.get(`${dbUrl}/players/${firebaseKey}.json`)
     .then((response) => resolve(response.data))
     .catch(reject);
 });
