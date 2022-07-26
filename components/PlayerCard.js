@@ -22,7 +22,7 @@ export default function PlayerCard({ playerObj, onUpdate }) {
         <Link href={`/players/${playerObj.firebaseKey}`} passHref>
           <Button variant="primary" className="m-2">VIEW</Button>
         </Link>
-        <Link href={`/players/edit/${playerObj.firebaseKey}`} passHref>
+        <Link href={`/player/edit/${playerObj.firebaseKey}`} passHref>
           <Button variant="info">EDIT</Button>
         </Link>
         <Link href="/" passHref>

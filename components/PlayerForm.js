@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useRouter } from 'next/router';
 import PropTypes from 'prop-types';
 import FloatingLabel from 'react-bootstrap/FloatingLabel';
@@ -15,16 +15,14 @@ const initialState = {
 };
 
 export default function PlayerForm({ obj }) {
-  // const [players, setPlayers]
+  // const [, setPlayers] = useState({});
   const [formInput, setFormInput] = useState(initialState);
   const { user } = useAuth();
   const router = useRouter();
 
-  //  useEffect(() => {
-  //    getPlayers(user.uid).then(setPlayers);
-
-  //    if(obj.firebaseKey)setFormInput(obj)
-  //  }, [obj, user]);
+  useEffect(() => {
+    if (obj.firebaseKey)setFormInput(obj);
+  }, [obj, user]);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -37,7 +35,7 @@ export default function PlayerForm({ obj }) {
   const handleSubmit = (e) => {
     e.preventDefault();
     if (obj.firebaseKey) {
-      updatePlayer(formInput).then(() => router.push(`/players/${obj.firebaseKey}`));
+      updatePlayer(formInput).then(() => router.push('/team'));
     } else {
       const payload = { ...formInput, uid: user.uid };
       createPlayer(payload).then(() => {
