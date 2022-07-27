@@ -19,7 +19,7 @@ export default function PlayerCard({ playerObj, onUpdate }) {
         <div>Name: {playerObj.name}</div>
         <div>Position: {playerObj.position}</div>
         <Card.Img variant="top" src={playerObj.imageURL} alt={playerObj.name} style={{ height: '400px' }} />
-        <Link href={`/players/${playerObj.firebaseKey}`} passHref>
+        <Link href={`/player/${playerObj.firebaseKey}`} passHref>
           <Button variant="primary" className="m-2">VIEW</Button>
         </Link>
         <Link href={`/player/edit/${playerObj.firebaseKey}`} passHref>
