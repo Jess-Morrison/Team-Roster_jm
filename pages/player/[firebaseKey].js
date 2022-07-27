@@ -1,11 +1,20 @@
-import React from 'react';
-// import { useRouter } from 'next/router';
+import React, { useEffect, useState } from 'react';
+import { useRouter } from 'next/router';
+import { getSinglePlayer } from '../../api/playerData';
+import PlayerCard from '../../components/PlayerCard';
 
 export default function ViewPlayer() {
-  // const router = useRouter;
+  const [viewPlayer, setViewPlayer] = useState({});
+  const router = useRouter();
+  const { firebaseKey } = router.query;
 
-  // const { firebaseKey } = router.query;
+  useEffect(() => {
+    getSinglePlayer(firebaseKey).then(setViewPlayer);
+  }, [firebaseKey]);
+
   return (
-    <div>View player </div>
+    <div className="d-flex flex-wrap">
+      <PlayerCard key={firebaseKey} playerObj={viewPlayer} />
+    </div>
   );
 }
