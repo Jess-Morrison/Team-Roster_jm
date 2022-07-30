@@ -20,14 +20,16 @@ a {
 
 body {
   /* background-color: #9e52c4; */
-  background-image:linear-gradient(purple, rgba(0, 0, 255, 0.604));
+  /* background-image:linear-gradient(purple, rgba(0, 0, 255, 0.604)); */
+  background-image: repeating-linear-gradient(purple, rgba(0, 0, 255, 0.604));
 }
 .font-link { 
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   font-size: xx-large;
 }  
-video {
+.video {
   padding: 10%;
+  
 }
 /* h1 {
   padding: 30%;
@@ -49,4 +51,19 @@ font-family: 'Hanalei Fill',cursive;
 
 .card {
  margin: 1%;
+}
+
+.profile-card {
+  font-size: xx-large;
+  padding: 15%;
+}
+
+.view-card {
+  height: 45rem;
+ padding: 10%; 
+ display: flex;
+ justify-content: center;
+ height: fit-content;
+ text-align: center;
+ 
 }

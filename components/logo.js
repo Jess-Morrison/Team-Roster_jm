@@ -7,7 +7,7 @@ import React from 'react';
 export default function Logo() {
   return (
     <>
-      <video loop autoPlay>
+      <video className="video" loop autoPlay>
         <source
           src="./logos/lyrics.mp4"
           type="video/mp4"

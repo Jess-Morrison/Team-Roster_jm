@@ -13,7 +13,7 @@ export default function ViewPlayer() {
   }, [firebaseKey]);
 
   return (
-    <div className="d-flex flex-wrap">
+    <div className="view-card">
       <PlayerCard key={firebaseKey} playerObj={viewPlayer} />
     </div>
   );
