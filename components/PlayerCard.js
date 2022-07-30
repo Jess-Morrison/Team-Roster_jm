@@ -14,7 +14,7 @@ export default function PlayerCard({ playerObj, onUpdate }) {
   };
 
   return (
-    <Card style={{ width: '25rem', margin: '10px' }}>
+    <Card style={{ width: '25rem' }}>
       <Card.Body>
         <div>Name: {playerObj.name}</div>
         <div>Position: {playerObj.position}</div>

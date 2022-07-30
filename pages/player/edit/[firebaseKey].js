@@ -13,6 +13,8 @@ export default function EditPlayer() {
   }, [firebaseKey]);
 
   return (
-    <PlayerForm obj={editPlayerItem} />
+    <div className="create-form" style={{ height: '45rem', padding: '10%' }}>
+      <PlayerForm obj={editPlayerItem} />
+    </div>
   );
 }

@@ -19,9 +19,11 @@ export default function Team() {
       <Link href="/player/new" passHref>
         <Button>Add A Player</Button>
       </Link>
-      {players.map((player) => (
-        <PlayerCard key={player.firebaseKey} playerObj={player} onUpdate={getPlayers} />
-      ))}
+      <div className="cards">
+        {players.map((player) => (
+          <PlayerCard key={player.firebaseKey} playerObj={player} onUpdate={getPlayers} />
+        ))}
+      </div>
       <div className="d-flex flex-wrap" />
     </div>
   );
