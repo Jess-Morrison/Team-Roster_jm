@@ -37,9 +37,16 @@ font-family: 'Hanalei Fill',cursive;
 
 } */
 
-.card {
+.cards {
   display: flex;
-  justify-content: flex-start;
+  flex-direction: row;
   flex-wrap: wrap;
+  padding: 5%;
+  justify-content: space-around;
+
   
+}
+
+.card {
+ margin: 1%;
 }
