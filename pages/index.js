@@ -1,6 +1,13 @@
+/* eslint-disable jsx-a11y/media-has-caption */
+/* eslint-disable @next/next/no-img-element */
 import { Button } from 'react-bootstrap';
+import Logo from '../components/Logo';
 import { signOut } from '../utils/auth';
 import { useAuth } from '../utils/context/authContext';
+// import Logo from '../components/logo';
+// import logoSVG from '../logos/logo.svg';
+// import logoPNG from '../logos/logo.png';
+// import logoMP4 from '../logos/lyrics.mp4';
 
 function Home() {
   const { user } = useAuth();
@@ -15,7 +22,14 @@ function Home() {
         margin: '0 auto',
       }}
     >
-      <h1>Hello {user.displayName}! </h1>
+      {/* <video loop autoPlay>
+        <source
+          src={logoMP4}
+          type="video/mp4"
+        />
+      </video> */}
+      <Logo />
+      <h1 className="font-link">Welcome {user.displayName}! </h1>
       <p>Click the button below to logout!</p>
       <Button variant="danger" type="button" size="lg" className="copy-btn" onClick={signOut}>
         Sign Out
