@@ -4,7 +4,7 @@ import React from 'react';
 
 // import logoMP4 from '../logos/lyrics.mp4';
 
-export default function Logo() {
+function Logo() {
   return (
     <>
       <video className="video" loop autoPlay>
@@ -13,7 +13,7 @@ export default function Logo() {
           type="video/mp4"
         />
       </video>
-      {/* <img src="./logos/logo.png" alt="Team Logo" /> */}
     </>
   );
 }
+export default Logo();

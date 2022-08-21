@@ -22,12 +22,6 @@ function Home() {
         margin: '0 auto',
       }}
     >
-      {/* <video loop autoPlay>
-        <source
-          src={logoMP4}
-          type="video/mp4"
-        />
-      </video> */}
       <Logo />
       <h1 className="font-link">Welcome {user.displayName}! </h1>
       <p>Click the button below to logout!</p>
