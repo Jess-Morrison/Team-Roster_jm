@@ -1,5 +1,5 @@
 {
-  "name": "Team Roster",
+  "name": "team-roster",
   "private": true,
   "version": "1.0.0",
   "author": "Jessica Morrison",
@@ -42,3 +42,4 @@
     "prettier": "^2.4.1"
   }
 }
+

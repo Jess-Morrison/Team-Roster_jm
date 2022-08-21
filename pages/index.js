@@ -1,7 +1,7 @@
 /* eslint-disable jsx-a11y/media-has-caption */
 /* eslint-disable @next/next/no-img-element */
 import { Button } from 'react-bootstrap';
-import Logo from '../components/Logo';
+// import Logo from '../components/Logo';
 import { signOut } from '../utils/auth';
 import { useAuth } from '../utils/context/authContext';
 // import Logo from '../components/logo';
@@ -22,7 +22,7 @@ function Home() {
         margin: '0 auto',
       }}
     >
-      <Logo />
+      {/* <Logo /> */}
       <h1 className="font-link">Welcome {user.displayName}! </h1>
       <p>Click the button below to logout!</p>
       <Button variant="danger" type="button" size="lg" className="copy-btn" onClick={signOut}>
